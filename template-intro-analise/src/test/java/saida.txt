@@ -1,201 +1,101 @@
 alg time sample
-"Verifica Duplicados com Set" 8206905 13052
-"Verifica Duplicados com Dois for" 1252856418 13052
-"Verifica Duplicados com Set" 2148179 28261
-"Verifica Duplicados com Dois for" 6517464812 28261
-"Verifica Duplicados com Set" 2118473 27313
-"Verifica Duplicados com Dois for" 7498967530 27313
-"Verifica Duplicados com Set" 2954690 12222
-"Verifica Duplicados com Dois for" 1072586661 12222
-"Verifica Duplicados com Set" 433269 13785
-"Verifica Duplicados com Dois for" 1387998127 13785
-"Verifica Duplicados com Set" 1087274 29945
-"Verifica Duplicados com Dois for" 7737424911 29945
-"Verifica Duplicados com Set" 461627 13629
-"Verifica Duplicados com Dois for" 1487932890 13629
-"Verifica Duplicados com Set" 11201 361
-"Verifica Duplicados com Dois for" 760981 361
-"Verifica Duplicados com Set" 177334 8073
-"Verifica Duplicados com Dois for" 470097377 8073
-"Verifica Duplicados com Set" 1431711 5196
-"Verifica Duplicados com Dois for" 280519696 5196
-"Verifica Duplicados com Set" 255917 11786
-"Verifica Duplicados com Dois for" 1376453272 11786
-"Verifica Duplicados com Set" 624604 25552
-"Verifica Duplicados com Dois for" 7436601506 25552
-"Verifica Duplicados com Set" 393167 13741
-"Verifica Duplicados com Dois for" 1990143178 13741
-"Verifica Duplicados com Set" 236188 11101
-"Verifica Duplicados com Dois for" 1332509989 11101
-"Verifica Duplicados com Set" 77347 3181
-"Verifica Duplicados com Dois for" 102168830 3181
-"Verifica Duplicados com Set" 887179 30291
-"Verifica Duplicados com Dois for" 11116008758 30291
-"Verifica Duplicados com Set" 848591 31841
-"Verifica Duplicados com Dois for" 11960885348 31841
-"Verifica Duplicados com Set" 2145555 20738
-"Verifica Duplicados com Dois for" 4793901131 20738
-"Verifica Duplicados com Set" 225921 10333
-"Verifica Duplicados com Dois for" 1045769067 10333
-"Verifica Duplicados com Set" 765931 30155
-"Verifica Duplicados com Dois for" 10207914717 30155
-"Verifica Duplicados com Set" 455173 20941
-"Verifica Duplicados com Dois for" 4653287708 20941
-"Verifica Duplicados com Set" 165186 7205
-"Verifica Duplicados com Dois for" 477679127 7205
-"Verifica Duplicados com Set" 91594 4377
-"Verifica Duplicados com Dois for" 170458102 4377
-"Verifica Duplicados com Set" 107176 5314
-"Verifica Duplicados com Dois for" 251795693 5314
-"Verifica Duplicados com Set" 600214 24693
-"Verifica Duplicados com Dois for" 6608304818 24693
-"Verifica Duplicados com Set" 175904 8284
-"Verifica Duplicados com Dois for" 631318732 8284
-"Verifica Duplicados com Set" 336615 14822
-"Verifica Duplicados com Dois for" 2213606671 14822
-"Verifica Duplicados com Set" 3487071 31655
-"Verifica Duplicados com Dois for" 11951378118 31655
-"Verifica Duplicados com Set" 6265 230
-"Verifica Duplicados com Dois for" 328406 230
-"Verifica Duplicados com Set" 162213 6591
-"Verifica Duplicados com Dois for" 422803592 6591
-"Verifica Duplicados com Set" 293692 9347
-"Verifica Duplicados com Dois for" 893302955 9347
-"Verifica Duplicados com Set" 553725 19926
-"Verifica Duplicados com Dois for" 4699201581 19926
-"Verifica Duplicados com Set" 4624945 26531
-"Verifica Duplicados com Dois for" 8777075131 26531
-"Verifica Duplicados com Set" 439832 18615
-"Verifica Duplicados com Dois for" 3802849680 18615
-"Verifica Duplicados com Set" 394957 11833
-"Verifica Duplicados com Dois for" 1544446379 11833
-"Verifica Duplicados com Set" 378387 12998
-"Verifica Duplicados com Dois for" 1851386555 12998
-"Verifica Duplicados com Set" 3813524 30922
-"Verifica Duplicados com Dois for" 11304303045 30922
-"Verifica Duplicados com Set" 243345 10959
-"Verifica Duplicados com Dois for" 1151297219 10959
-"Verifica Duplicados com Set" 425122 17504
-"Verifica Duplicados com Dois for" 3199738999 17504
-"Verifica Duplicados com Set" 310804 13205
-"Verifica Duplicados com Dois for" 1735447125 13205
-"Verifica Duplicados com Set" 22893 1186
-"Verifica Duplicados com Dois for" 10022359 1186
-"Verifica Duplicados com Set" 718463 27189
-"Verifica Duplicados com Dois for" 8437870156 27189
-"Verifica Duplicados com Set" 765556 25092
-"Verifica Duplicados com Dois for" 7180909207 25092
-"Verifica Duplicados com Set" 48247 2330
-"Verifica Duplicados com Dois for" 45943891 2330
-"Verifica Duplicados com Set" 1714572 16710
-"Verifica Duplicados com Dois for" 2966596086 16710
-"Verifica Duplicados com Set" 787712 31677
-"Verifica Duplicados com Dois for" 11492883059 31677
-"Verifica Duplicados com Set" 229932 10097
-"Verifica Duplicados com Dois for" 1080924044 10097
-"Verifica Duplicados com Set" 449341 16256
-"Verifica Duplicados com Dois for" 3128510081 16256
-"Verifica Duplicados com Set" 417564 18720
-"Verifica Duplicados com Dois for" 3964611420 18720
-"Verifica Duplicados com Set" 326650 12325
-"Verifica Duplicados com Dois for" 1651723798 12325
-"Verifica Duplicados com Set" 16742 580
-"Verifica Duplicados com Dois for" 2522206 580
-"Verifica Duplicados com Set" 241085 11637
-"Verifica Duplicados com Dois for" 1471955805 11637
-"Verifica Duplicados com Set" 505852 18261
-"Verifica Duplicados com Dois for" 3763509823 18261
-"Verifica Duplicados com Set" 878763 30139
-"Verifica Duplicados com Dois for" 10294269040 30139
-"Verifica Duplicados com Set" 202287 9985
-"Verifica Duplicados com Dois for" 934157211 9985
-"Verifica Duplicados com Set" 2676311 30942
-"Verifica Duplicados com Dois for" 10981154209 30942
-"Verifica Duplicados com Set" 768243 32449
-"Verifica Duplicados com Dois for" 12467951035 32449
-"Verifica Duplicados com Set" 42536 2077
-"Verifica Duplicados com Dois for" 35260389 2077
-"Verifica Duplicados com Set" 68390 3110
-"Verifica Duplicados com Dois for" 83999251 3110
-"Verifica Duplicados com Set" 185173 6787
-"Verifica Duplicados com Dois for" 421602589 6787
-"Verifica Duplicados com Set" 188030 9067
-"Verifica Duplicados com Dois for" 763296316 9067
-"Verifica Duplicados com Set" 363363 14077
-"Verifica Duplicados com Dois for" 2007854558 14077
-"Verifica Duplicados com Set" 459867 18977
-"Verifica Duplicados com Dois for" 3812503889 18977
-"Verifica Duplicados com Set" 383313 16981
-"Verifica Duplicados com Dois for" 2996519932 16981
-"Verifica Duplicados com Set" 17307 790
-"Verifica Duplicados com Dois for" 4459861 790
-"Verifica Duplicados com Set" 488456 22502
-"Verifica Duplicados com Dois for" 5552800085 22502
-"Verifica Duplicados com Set" 494711 19210
-"Verifica Duplicados com Dois for" 4085243800 19210
-"Verifica Duplicados com Set" 722660 26855
-"Verifica Duplicados com Dois for" 8293706961 26855
-"Verifica Duplicados com Set" 288453 12461
-"Verifica Duplicados com Dois for" 1574205322 12461
-"Verifica Duplicados com Set" 2549891 27091
-"Verifica Duplicados com Dois for" 8304647774 27091
-"Verifica Duplicados com Set" 314317 13698
-"Verifica Duplicados com Dois for" 1879951823 13698
-"Verifica Duplicados com Set" 208000 9847
-"Verifica Duplicados com Dois for" 902447675 9847
-"Verifica Duplicados com Set" 710671 28117
-"Verifica Duplicados com Dois for" 9350022307 28117
-"Verifica Duplicados com Set" 455054 20552
-"Verifica Duplicados com Dois for" 5038452249 20552
-"Verifica Duplicados com Set" 663130 24917
-"Verifica Duplicados com Dois for" 7324029475 24917
-"Verifica Duplicados com Set" 329874 14177
-"Verifica Duplicados com Dois for" 2042994115 14177
-"Verifica Duplicados com Set" 2530422 31129
-"Verifica Duplicados com Dois for" 11273277145 31129
-"Verifica Duplicados com Set" 500642 21730
-"Verifica Duplicados com Dois for" 5114054326 21730
-"Verifica Duplicados com Set" 168729 7500
-"Verifica Duplicados com Dois for" 522614552 7500
-"Verifica Duplicados com Set" 485535 21155
-"Verifica Duplicados com Dois for" 4826509850 21155
-"Verifica Duplicados com Set" 168478 7559
-"Verifica Duplicados com Dois for" 532955006 7559
-"Verifica Duplicados com Set" 147991 6575
-"Verifica Duplicados com Dois for" 400807336 6575
-"Verifica Duplicados com Set" 409924 17387
-"Verifica Duplicados com Dois for" 3188587366 17387
-"Verifica Duplicados com Set" 676336 26567
-"Verifica Duplicados com Dois for" 7878756780 26567
-"Verifica Duplicados com Set" 42115 1764
-"Verifica Duplicados com Dois for" 25139126 1764
-"Verifica Duplicados com Set" 53613 1755
-"Verifica Duplicados com Dois for" 24825327 1755
-"Verifica Duplicados com Set" 111994 5411
-"Verifica Duplicados com Dois for" 267928179 5411
-"Verifica Duplicados com Set" 117570 5682
-"Verifica Duplicados com Dois for" 296438407 5682
-"Verifica Duplicados com Set" 553452 23710
-"Verifica Duplicados com Dois for" 6230392542 23710
-"Verifica Duplicados com Set" 885522 31862
-"Verifica Duplicados com Dois for" 12164836931 31862
-"Verifica Duplicados com Set" 321747 13467
-"Verifica Duplicados com Dois for" 1831549333 13467
-"Verifica Duplicados com Set" 1380450 8539
-"Verifica Duplicados com Dois for" 705656886 8539
-"Verifica Duplicados com Set" 339656 14167
-"Verifica Duplicados com Dois for" 2069575764 14167
-"Verifica Duplicados com Set" 674900 26899
-"Verifica Duplicados com Dois for" 8082301716 26899
-"Verifica Duplicados com Set" 463505 19730
-"Verifica Duplicados com Dois for" 4182732722 19730
-"Verifica Duplicados com Set" 599760 23690
-"Verifica Duplicados com Dois for" 6425985863 23690
-"Verifica Duplicados com Set" 162773 6008
-"Verifica Duplicados com Dois for" 332814026 6008
-"Verifica Duplicados com Set" 71147 3101
-"Verifica Duplicados com Dois for" 84237987 3101
-"Verifica Duplicados com Set" 257517 11992
-"Verifica Duplicados com Dois for" 1415280447 11992
-"Verifica Duplicados com Set" 196162 8938
-"Verifica Duplicados com Dois for" 751083370 8938
+busca-recursiva 76494 106
+busca-recursiva 11091 938
+busca-recursiva 10249 905
+busca-recursiva 8687 624
+busca-recursiva 7865 741
+busca-recursiva 4238 153
+busca-recursiva 4338 160
+busca-recursiva 4107 95
+busca-recursiva 7884 893
+busca-recursiva 7224 713
+busca-recursiva 5050 231
+busca-recursiva 5620 249
+busca-recursiva 8716 120
+busca-recursiva 10941 720
+busca-recursiva 5610 599
+busca-recursiva 5951 877
+busca-recursiva 5280 722
+busca-recursiva 6302 593
+busca-recursiva 7154 682
+busca-recursiva 5400 687
+busca-recursiva 11852 554
+busca-recursiva 10540 425
+busca-recursiva 4408 749
+busca-recursiva 4338 568
+busca-recursiva 7645 915
+busca-recursiva 5089 492
+busca-recursiva 4128 204
+busca-recursiva 9197 655
+busca-recursiva 3788 167
+busca-recursiva 11442 550
+busca-recursiva 3487 693
+busca-recursiva 3487 723
+busca-recursiva 2815 242
+busca-recursiva 3276 556
+busca-recursiva 3848 938
+busca-recursiva 4298 576
+busca-recursiva 3066 280
+busca-recursiva 1794 27
+busca-recursiva 3467 729
+busca-recursiva 3907 802
+busca-recursiva 1242 5
+busca-recursiva 2144 50
+busca-recursiva 3497 654
+busca-recursiva 2776 232
+busca-recursiva 6843 623
+busca-recursiva 3807 823
+busca-recursiva 3476 679
+busca-recursiva 3757 961
+busca-recursiva 3005 384
+busca-recursiva 3977 711
+busca-recursiva 1793 24
+busca-recursiva 25067 546
+busca-recursiva 891 934
+busca-recursiva 531 58
+busca-recursiva 771 467
+busca-recursiva 821 611
+busca-recursiva 732 358
+busca-recursiva 711 178
+busca-recursiva 622 115
+busca-recursiva 772 547
+busca-recursiva 782 593
+busca-recursiva 1072 956
+busca-recursiva 30898 355
+busca-recursiva 1443 834
+busca-recursiva 1423 841
+busca-recursiva 992 592
+busca-recursiva 331 3
+busca-recursiva 821 738
+busca-recursiva 781 690
+busca-recursiva 1272 889
+busca-recursiva 721 343
+busca-recursiva 771 590
+busca-recursiva 781 993
+busca-recursiva 591 54
+busca-recursiva 881 788
+busca-recursiva 531 58
+busca-recursiva 601 151
+busca-recursiva 731 454
+busca-recursiva 581 111
+busca-recursiva 761 362
+busca-recursiva 791 619
+busca-recursiva 581 88
+busca-recursiva 722 503
+busca-recursiva 821 854
+busca-recursiva 572 56
+busca-recursiva 982 942
+busca-recursiva 611 153
+busca-recursiva 872 472
+busca-recursiva 792 374
+busca-recursiva 962 373
+busca-recursiva 801 349
+busca-recursiva 721 317
+busca-recursiva 651 205
+busca-recursiva 952 623
+busca-recursiva 1703 564
+busca-recursiva 942 953
+busca-recursiva 1172 536
+busca-recursiva 1613 901
+busca-recursiva 981 195
+busca-recursiva 2345 977
