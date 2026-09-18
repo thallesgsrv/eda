@@ -1,4 +1,4 @@
-package eda;
+package eda.recursivos;
 
 import java.util.Scanner;
 
