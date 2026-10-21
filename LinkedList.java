@@ -14,10 +14,12 @@ public class LinkedList {
 		this.size = 0;
 	}
 	
+	// verifica se a lista esta vázia
 	public boolean isEmpty() {
 		return this.head == null;
 	}
 	
+	// adiciona no final da lista
 	public void addLast(int v) {
 		Node nn = new Node(v);
 		if (isEmpty()) {
@@ -31,6 +33,7 @@ public class LinkedList {
 		size++;
 	}
 	
+	// adiciona no começo da lista
 	public void addFirst(int v) {
 		Node nn = new Node(v);
 		if (isEmpty()) {
@@ -44,6 +47,7 @@ public class LinkedList {
 		size++;
 	}
 	
+	// adiciona no indice especifico
 	public void add(int index, int v) {
 		if (index < 0 || index > size)
 			throw new IndexOutOfBoundsException();
@@ -69,6 +73,7 @@ public class LinkedList {
 		size++;
 	}
 	
+	// percorre a lista até encontrar o elemento e retorna o indice da primeira ocorrência do elemento
 	public int indexOf(int v) {
 		Node aux = this.head;
 		int index = 0;
@@ -81,6 +86,7 @@ public class LinkedList {
 		return -1;
 	}
 	
+	// percorre a lista até encontrar o elemento e retorna o indice da ultima ocorrência do elemento 
 	public int lastIndexOf(int v) {
 		Node aux = this.tail;
 		int index = 0;
@@ -93,6 +99,7 @@ public class LinkedList {
 		return -1;
 	}
 	
+	// retorna o elemento de acordo com o indice
 	public int get(int index) {
 		if (index < 0 || index >= size)
 			throw new IndexOutOfBoundsException();
@@ -106,20 +113,25 @@ public class LinkedList {
 		return aux.v;
 	}
 	
+	// verifica se contém o elemento na lista
 	public boolean contains(int v) {
 		return indexOf(v) != -1;
 	}
 	
+	// retorna o primeiro elemento da lista
 	public Integer getFirst() {
 	    if(this.isEmpty()) return null;
 	    return this.head.v;
 	}
 
+	// retorna o ultimo elemento da lista
 	public Integer getLast() {
 	    if(this.isEmpty()) return null;
 	    return this.tail.v;
 	}
 	
+	
+	// remove o primeiro elemento da lista
 	public int removeFirst() {
         
 	    if (isEmpty()) throw new NoSuchElementException();
@@ -138,6 +150,7 @@ public class LinkedList {
 	    return v;
 	}
 
+	// remove o ultimo elemento da lista
 	public int removeLast() {
         
 	    if (isEmpty()) throw new NoSuchElementException();
@@ -156,6 +169,7 @@ public class LinkedList {
 	    return v;
 	}
 	
+	// remove a primeira ocorrencia do elemento
 	public boolean removeByValue(int v) {
 	    Node aux = this.head;
 	    for (int i = 0; i < this.size; i++) {
@@ -175,10 +189,13 @@ public class LinkedList {
 	    return false;
 	}
 	
+	// retorna o tamanho da lista
 	public int size() {
 		return size;
 	}
 	
+	
+	// remove com base no indice
 	public int remove(int index) {
 	    if (index < 0 || index >= size)
 	        throw new IndexOutOfBoundsException();
@@ -197,6 +214,7 @@ public class LinkedList {
 	}
 }
 
+// classe dos nós 
 class Node {
 	int v;
 	Node next;
