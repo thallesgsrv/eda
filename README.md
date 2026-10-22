@@ -24,8 +24,3 @@ mkdir -p out
 javac -d out $(find src -name "*.java")
 java -cp out eda.recursivos.Fibonacci
 ```
-
-## Pendências conhecidas
-
-- `sort/MergePassoPasso.java`: rascunho de counting/radix sort incompleto (não compila).
-- `estruturas/ArrayList.java`: `remove(int index)` e `remove(int value)` têm a mesma assinatura.

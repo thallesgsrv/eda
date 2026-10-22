@@ -73,7 +73,7 @@ public class ArrayList {
 		return value;
 	}
 	
-	public boolean remove(int value) {
+	public boolean removeByValue(int value) {
 		for (int i = 0; i < this.tamanho; i++) {
 			if (this.lista[i] == value) {
 				this.remove(i);
