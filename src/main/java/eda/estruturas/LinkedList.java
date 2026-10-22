@@ -1,4 +1,4 @@
-package eda;
+package eda.estruturas;
 
 import java.util.*;
 
