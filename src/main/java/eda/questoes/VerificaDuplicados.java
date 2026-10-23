@@ -1,4 +1,4 @@
-package eda.analise;
+package eda.questoes;
 import java.util.*;
 
 class VerificaDuplicados {
