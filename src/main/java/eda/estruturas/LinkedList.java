@@ -19,6 +19,59 @@ public class LinkedList {
 		return this.head == null;
 	}
 
+	public void inverte() {
+		Node aux = this.head;
+
+		while (aux != null) {
+			Node temp = aux.next;
+
+			aux.next = aux.prev;
+			aux.prev = temp;
+
+			aux = temp;
+		}
+
+		Node temp = this.head;
+		this.head = this.tail;
+		this.tail = temp;
+	}
+
+
+	public boolean isPalindrome() {
+		Node aux1 = this.head;
+		Node aux2 = this.tail;
+
+		while(aux1 != aux2 && aux1.next != aux2){
+			if(aux1.v != aux2.v)
+				return false;
+			aux1 = aux1.next;
+			aux2 = aux2.prev;
+		}
+		return true;
+	}
+
+	public void moveToHead(int index){
+		if(index < 0 && index > size) throw new IllegalArgumentException();
+
+		Node aux = this.head;
+
+		for(int i = 0; i < index; i++){
+			aux = aux.next;
+		}
+
+		aux.prev.next = aux.next;
+		if (aux == this.tail){
+			this.tail = aux.prev;
+		} else {
+			aux.next.prev = aux.prev;
+		}
+
+		aux.prev = null;
+		aux.next = this.head;
+		this.head.prev = aux;
+		this.head = aux;
+	}
+
 	// adiciona no final da lista
 	public void addLast(int v) {
 		Node nn = new Node(v);
@@ -282,7 +335,35 @@ public class LinkedList {
 		size--;
 		return aux.v;
 	}
+	public int removeAll(int valor) {
+		Node aux = this.head;
+		int removidos = 0;
+
+		while (aux != null) {
+			Node proximo = aux.next;
+
+			if (aux.v == valor) {
+				if (aux == this.head) {
+					removeFirst();
+				} else if (aux == this.tail) {
+					removeLast();
+				} else {
+					aux.prev.next = aux.next;
+					aux.next.prev = aux.prev;
+					size--;
+				}
+
+				removidos++;
+			}
+
+			aux = proximo;
+		}
+
+		return removidos;
+	}
 }
+
+
 
 // classe dos nós
 class Node {
