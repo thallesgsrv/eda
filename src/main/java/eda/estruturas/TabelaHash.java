@@ -3,107 +3,184 @@ package eda.estruturas;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import util.Aluno;
-
 /**
- * Esta classe representa a implementação de uma Tabela Hash que usa endereçamento fechado (encadeamento)
- * para resolver colisões.
- * 
- * A implementação abaixo apenas lida com objetos do tipo aluno. Essa foi uma decisão para fins didáticos. 
- * Naturalmente, por ser uma estrutura de propósito geral, uma tabela hash deve ser capaz de manipular objetos
- * de qualquer tipo.
+ * Implementação de uma Tabela Hash com endereçamento fechado
+ * (encadeamento) para resolução de colisões.
  *
- * Esta é uma versão simplificada para fins didáticos. Não lidamos com resize e rehash aqui. Isso é assunto de um exercício específico.
- *  
- * @author João Arthur
- * @see <a href="http://joaoarthurbm.github.io/eda">http://joaoarthurbm.github.io/eda</a>
- * Computação @ UFCG
+ * Implementação simplificada, sem resize e rehash.
+ *
+ * @author Thalles Gabriel Saraiva de Lira Silva
  */
-public class TabelaHash {
 
-    private ArrayList<Aluno>[] tabela;
+public class TabelaHash<K, V> {
+
+    private ArrayList<Entry>[] tabela;
     private final int CAPACIDADE_DEFAULT = 20;
 
     /**
-     * Cria uma nova tabela com a capacidade default 20.
+     * Cria uma tabela com capacidade default 20.
      */
+    @SuppressWarnings("unchecked")
     public TabelaHash() {
         this.tabela = new ArrayList[CAPACIDADE_DEFAULT];
     }
-    
+
     /**
-     * Cria uma nova tabela com a capacidade passada como parâmetro.
-     * @param capacidade O número de posições da tabela.
+     * Cria uma tabela com a capacidade informada.
      */
-    
     @SuppressWarnings("unchecked")
-    public TabelaHashEncadeada(int capacidade) {
-        this.tabela = new ArrayList<Aluno>[capacidade];
-    }
-    
-    /**
-     * Calcula o hash de uma determinada chave. A função de hash é simples
-     * e usa o método da divisão.
-     * @param chave A chave para a qual se deseja calcular o hash.
-     * @return O hash calculado tendo como base a chave e o tamanho da tabela.
-     */
-    private int hash(Integer chave) {
-        return 
-    }
-    
-    /**
-     * Adiciona o par chave, valor na tabela.
-     * @param chave a matrícula do aluno a ser adicionado.
-     * @param valor o objeto Aluno a ser adicionado na tabela.
-     */
-    public void put(Integer chave, Aluno valor) {
-        // TODO implementar
-    }
-
-    /**
-     * Recupera o aluno cuja chave é igual a passada como parâmetro.
-     * @param chave a matrícula do aluno.
-     * @return o aluno com a matrícula passada como parâmetro. null caso
-     * nenhum aluno presente na tabela tenha a matrícula igual a passada como
-     * parâmetro.
-     */
-    public Aluno get(Integer chave) {
-        // TODO: implementar
-        return null;
-    }  
-
-     public boolean containsKey(Integer chave) {
-        //TODO implementar
-        return false;
-    }
-
-    public boolean containsValue(Aluno aluno) {
-        //TODO implementar
-        return false;
-    }
-
-    /**
-     * Remove o aluno cuja matrícula é igual a chave passada como parâmetro.
-     * @param chave A matrícula do aluno a ser removido.
-     * @return O aluno a ser removido. null caso não haja aluno com a matrícula
-     * passada como parâmetro. 
-     */
-    public Aluno remove(int chave) {
-        int hash = hash(chave);
-        ArrayList<Aluno> alunos = this.tabela[hash];
-        
-        Iterator<Aluno> it = alunos.iterator();
-        Aluno atual = null;
-        
-        while (it.hasNext()) {
-                atual = it.next();
-                if (atual.getMatricula().equals(chave)) {
-                    it.remove();
-                    return atual;
-                }
+    public TabelaHash(int capacidade) {
+        if (capacidade <= 0) {
+            throw new IllegalArgumentException("Capacidade inválida.");
         }
-        
-        return atual;
-    }  
 
+        this.tabela = new ArrayList[capacidade];
+    }
+
+    /**
+     * Calcula o hash utilizando o método da divisão.
+     */
+    private int hash(K chave) {
+        return Math.floorMod(chave.hashCode(), tabela.length);
+    }
+
+    /**
+     * Retorna o índice da posição que contém a chave.
+     */
+    private int indiceDe(K chave) {
+
+        int idx = hash(chave);
+
+        if (tabela[idx] == null) {
+            return -1;
+        }
+
+        for (Entry atual : tabela[idx]) {
+            if (atual.getKey().equals(chave)) {
+                return idx;
+            }
+        }
+
+        return -1;
+    }
+
+    /**
+     * Recupera o valor associado à chave.
+     */
+    @SuppressWarnings("unchecked")
+    public V get(K chave) {
+
+        int idx = indiceDe(chave);
+
+        if (idx == -1) {
+            return null;
+        }
+
+        for (Entry atual : tabela[idx]) {
+            if (atual.getKey().equals(chave)) {
+                return (V) atual.getValue();
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Adiciona ou atualiza um par chave-valor na tabela.
+     */
+    public void put(K chave, V valor) {
+
+        int idx = hash(chave);
+
+        if (tabela[idx] == null) {
+            tabela[idx] = new ArrayList<>();
+        }
+
+        for (Entry atual : tabela[idx]) {
+
+            if (atual.getKey().equals(chave)) {
+                atual.setValue(valor);
+                return;
+            }
+        }
+
+        tabela[idx].add(new Entry(chave, valor));
+    }
+
+    /**
+     * Verifica se a chave está presente na tabela.
+     */
+    public boolean containsKey(K chave) {
+        return indiceDe(chave) != -1;
+    }
+
+    /**
+     * Verifica se determinado valor está presente na tabela.
+     */
+    public boolean containsValue(V valor) {
+
+        for (ArrayList<Entry> lista : tabela) {
+
+            if (lista != null) {
+
+                for (Entry atual : lista) {
+                    if (atual.getValue().equals(valor)) {
+                        return true;
+                    }
+                }
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Remove o par cuja chave corresponde à chave informada.
+     */
+    @SuppressWarnings("unchecked")
+    public V remove(K chave) {
+
+        int idx = hash(chave);
+
+        if (tabela[idx] == null) {
+            return null;
+        }
+
+        Iterator<Entry> it = tabela[idx].iterator();
+
+        while (it.hasNext()) {
+
+            Entry atual = it.next();
+
+            if (atual.getKey().equals(chave)) {
+                it.remove();
+                return (V) atual.getValue();
+            }
+        }
+
+        return null;
+    }
+}
+
+class Entry {
+
+    private Object key;
+    private Object value;
+
+    public Entry(Object key, Object value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public Object getKey() {
+        return key;
+    }
+
+    public Object getValue() {
+        return value;
+    }
+
+    public void setValue(Object value) {
+        this.value = value;
+    }
 }
