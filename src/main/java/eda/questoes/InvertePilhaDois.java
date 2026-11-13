@@ -2,28 +2,28 @@ package eda.questoes;
 
 import java.util.Scanner;
 
-public class InvertePilha {
+public class InvertePilhaDois {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        Pilha p = new Pilha(n);
+        PilhaDois p = new PilhaDois(n);
 
         for (int i = 0; i < n; i++){
             p.push(sc.nextInt());
         }
 
-        Pilha a = p.invertePilha();
+        PilhaDois a = p.invertePilha();
         for (int i = 0; i < n; i++){
             System.out.println(a.pop());
         }
     }
 }
 
-class Pilha {
+class PilhaDois {
     private int topo;
     private int[] pilha;
 
-    public Pilha(int capacidade){
+    public PilhaDois(int capacidade){
         this.topo = -1;
         this.pilha = new int[capacidade];
     }
@@ -51,8 +51,8 @@ class Pilha {
         return this.pilha[this.topo];
     }
 
-    public Pilha invertePilha(){
-        Pilha a = new Pilha(pilha.length);
+    public PilhaDois invertePilha(){
+        PilhaDois a = new PilhaDois(pilha.length);
         while (!isEmpty()){
             a.push(pop());
         }

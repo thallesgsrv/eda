@@ -6,13 +6,13 @@ public class TrocaVizinhosLL {
 
 }
 
-class LinkedList {
+class LinkedListDois {
 
     private Node head;
     private Node tail;
     private int size;
 
-    public LinkedList() {
+    public LinkedListDois() {
         this.head = null;
         this.tail = null;
         this.size = 0;
@@ -339,12 +339,12 @@ class LinkedList {
 }
 
 // classe dos nós
-class Node {
+class NodeDois {
     int v;
     Node next;
     Node prev;
 
-    public Node(int v) {
+    public NodeDois(int v) {
         this.v = v;
         this.next = null;
         this.prev = null;
