@@ -1,5 +1,4 @@
-package java.eda.estruturas;
-import eda.estruturas.FIFOCache;
+package eda.estruturas;
 
 public class FIFOCacheAsserts {
 

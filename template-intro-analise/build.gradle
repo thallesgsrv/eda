@@ -6,12 +6,25 @@ repositories {
 	mavenCentral()
 }
 
+java {
+	sourceCompatibility = JavaVersion.VERSION_11
+	targetCompatibility = JavaVersion.VERSION_11
+}
+
+// Evita problemas de acentuação em Windows (cp1252) vs Linux/macOS (UTF-8).
+tasks.withType(JavaCompile).configureEach {
+	options.encoding = 'UTF-8'
+}
+
 dependencies {
-	testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
+	testImplementation platform('org.junit:junit-bom:5.10.2')
+	testImplementation 'org.junit.jupiter:junit-jupiter'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
 	useJUnitPlatform()
+	enableAssertions = true
 	testLogging {
 		events "passed", "skipped", "failed"
 	}

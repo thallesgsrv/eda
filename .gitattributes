@@ -1,0 +1,6 @@
+# Normaliza quebras de linha entre Windows/Linux/macOS.
+* text=auto
+*.sh text eol=lf
+*.java text
+*.pdf binary
+*.jar binary

@@ -1,0 +1,6 @@
+# https://editorconfig.org — IntelliJ lê nativamente; Eclipse/VS Code/NetBeans via plugin.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf

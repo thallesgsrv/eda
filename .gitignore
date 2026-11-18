@@ -95,3 +95,14 @@ bin/
 out/
 build/
 .gradle/
+
+# Outras IDEs (Eclipse/IntelliJ já cobertos acima; Maven/Gradle regeneram esses arquivos)
+.factorypath
+.apt_generated/
+.apt_generated_tests/
+*.iws
+*.ipr
+nbproject/
+nbbuild/
+nbdist/
+.vscode/

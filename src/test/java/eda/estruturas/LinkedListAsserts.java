@@ -1,5 +1,7 @@
 package eda.estruturas;
 
+import eda.
+
 public class LinkedListAsserts {
     
     public void testIsEmpty() {
